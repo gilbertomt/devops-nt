@@ -1,0 +1,43 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+.tfvars
+*.tfvars.json
+
+# Kubernetes
+kubeconfig
+kubeconfig.yaml
+.kube/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+docs/
+
+# Logs
+*.log
+logs/
+
+# Build artifacts
+bin/
+obj/
+dist/
+
+# Docker
+.dockerignore
+
+# AWS
+.aws/
+aws_credentials
+.env
+.env.local
+
+# OS
+Thumbs.db

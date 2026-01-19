@@ -1,0 +1,6 @@
+@devops_nt_app_HostAddress = http://localhost:5190
+
+GET {{devops_nt_app_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
