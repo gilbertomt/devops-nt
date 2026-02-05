@@ -19,7 +19,7 @@ kubeconfig.yaml
 *.swo
 *~
 .DS_Store
-docs/
+
 
 # Logs
 *.log
@@ -39,5 +39,8 @@ aws_credentials
 .env
 .env.local
 
-# OS
+# Outros
 Thumbs.db
+docs/
+mkdocs.yml
+devops-nt.sln

@@ -10,9 +10,13 @@ module "eks" {
   subnet_ids                               = module.vpc.private_subnets
   vpc_id                                   = module.vpc.vpc_id
   endpoint_private_access                  = true
-  endpoint_public_access                   = true
   enable_cluster_creator_admin_permissions = true
-
+  
+  # O acesso público ao endpoint do cluster fica habilitado para facilitar o acesso via kubectl e Helm.
+  # Apenas para caráter de laboratório, deste modo não faz necessário configurar VPN ou bastion host para acessar o cluster.
+  endpoint_public_access                   = true
+  # Em desemvolvimento e produção, é recomendado restringir o acesso público por questões de segurança.
+  
   addons = {
     coredns = {}
     eks-pod-identity-agent = {
